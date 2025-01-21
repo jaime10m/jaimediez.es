@@ -37,7 +37,7 @@ h1 {
     padding: 0px 10px 5px 10px;
 }
 
-.icons-header > button {
+.icons-header>button {
     background-color: transparent;
     color: #dbdbdb;
     border: 2px solid #a492ff;
@@ -46,6 +46,54 @@ h1 {
     padding: 10px 15px 10px 15px;
     margin-top: 40px;
     margin-right: 10px;
+}
+
+button {
+    --color: #a492ff;
+    background-color: transparent;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #dbdbdb;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #a492ff;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #262838;
+    transform: 10s;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.btn-header:hover img {
+    transition: filter 1s ease;
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(190deg);
 }
 
 img {
@@ -88,12 +136,69 @@ h2 {
     margin-bottom: 30px;
 }
 
-.article {
-    width: 300px;
-    margin: 20px;
+.experience-container {
+    justify-content: center;
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+} 
+
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience:first-child { 
+    margin-top: 50px;
+}
+
+.experience:last-child { 
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 325px;
+    background-color: #2E3042;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    margin: 0;
+}
+
+.card-header a {
+    text-decoration: none;
+    color: #BBBBBB;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.card-header a:hover {
+    text-decoration: underline;
 }
 
 .text-about-me {
@@ -171,4 +276,20 @@ span img {
     margin-top: 50px;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding-top: 300px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .text-about-me {
+        width: 90%;
+    }
+}

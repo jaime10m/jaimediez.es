@@ -9,6 +9,14 @@
     <title>Jaime Díez</title>
     <link rel="icon" href="images/jaime.webp">
     <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4R30WQYFN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T4R30WQYFN');
+    </script>
 </head>
 
 <body>
@@ -16,12 +24,19 @@
         <h1>
             Hola! Soy Jaime, <br> Desarrollador <span class="text-tl">web</span>
         </h1>
-        <p class="description">
-            I'm a software engineer dedicated to building <br> impactful digital solutions for brands and users
+        <p>
+            Me dedico a generar soluciones digitales <br> que produzcan un impacto en los usuarios
         </p>
         <div class="icons-header">
-            <button class="btn-header"><img src="images/cv.svg" alt="">Curriculum</button>
-            <button class="btn-header"><img src="images/in.svg" alt="">Linkedin</button>
+            <button onclick="window.open('cv.pdf', '_blank');">
+                <img src="images/cv.svg" alt="">
+                Curriculum
+            </button>
+            <button
+                onclick="window.open('https://www.linkedin.com/in/jaime-d%C3%ADez-mart%C3%ADnez-96745019b', '_blank');">
+                <img src="images/in.svg" alt="">
+                Linkedin
+            </button>
         </div>
     </header>
     <hr>
@@ -46,7 +61,7 @@
         <div class="container experience">
             <div class="container experience">
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/erpsencillo.png?fit=600%2C296&ssl=1" alt="">
+                    <img src="images/erpsencillo.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>ERPSencillo</h3>
@@ -54,9 +69,9 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/i2telco.png?fit=600%2C297&ssl=1" alt="">
+                    <img src="images/i2telco.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>i2telco</h3>
@@ -65,7 +80,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/pilarcuesta.png?fit=600%2C294&ssl=1" alt="">
+                    <img src="images/pilarcuesta.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>Pilar Cuesta</h3>
@@ -76,7 +91,7 @@
             </div>
             <div class="container experience">
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/papagayo.png?fit=600%2C294&ssl=1" alt="">
+                    <img src="images/papagayoea.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>PapagayoEA</h3>
@@ -85,7 +100,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/capazita.png?fit=600%2C297&ssl=1" alt="">
+                    <img src="images/capazita.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>Capazita</h3>
@@ -94,7 +109,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://i0.wp.com/jaimediez.es/wp-content/uploads/pbelmonte.png?fit=600%2C293&ssl=1" alt="">
+                    <img src="images/pbelmonte.webp" alt="">
                     <div class="card-content">
                         <div class="card-header">
                             <h3>Pascual Belmonte</h3>
@@ -105,6 +120,7 @@
             </div>
         </div>
     </div>
+    <hr>
 
     <div class="container skills">
         <h2>
@@ -176,15 +192,17 @@
             Contacto
         </h2>
         <p>
-            Puedes contactarme por teléfono o redes. <br><br>
+            Puedes contactarme por teléfono o redes.<br>
             ¡Si quieres una página web escríbeme!
         </p>
         <div class="img-contact">
-            <a href="tel:699119059" target="_blank"><img src="images/phone.svg" alt=""></a>
-            <a href="mailto:jaimediezm@gmail.com" target="_blank"><img src="images/mail.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/jaime-d%C3%ADez-mart%C3%ADnez-96745019b/" target="_blank"><img
-                    src="images/linkedin.svg" alt=""></a>
-            <a href="https://github.com/jaime10m" target="_blank"><img src="images/github.svg" alt=""></a>
+            <a href="tel:699119059" target="_blank" aria-label="699119059"><img src="images/phone.svg" alt=""></a>
+            <a href="mailto:jaimediezm@gmail.com" target="_blank" aria-label="jaimediezm@gmail.com"><img
+                    src="images/mail.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/jaime-d%C3%ADez-mart%C3%ADnez-96745019b" target="_blank"
+                aria-label="jaimediez"><img src="images/linkedin.svg" alt=""></a>
+            <a href="https://github.com/jaime10m" target="_blank" aria-label="jaime10m"><img src="images/github.svg"
+                    alt=""></a>
         </div>
     </div>
 
